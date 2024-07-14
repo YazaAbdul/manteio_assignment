@@ -16,9 +16,7 @@ public class RetrofitClient {
 
     private static Retrofit retrofit = null;
 
-    private RetrofitClient() {
-        // Private constructor to prevent instantiation
-    }
+
 
     public static Retrofit getClient() {
         if (retrofit == null) {

@@ -18,12 +18,12 @@ import java.util.List;
 
 public class Complaint_Adapter extends RecyclerView.Adapter<Complaint_Adapter.Viewholder>{
 
-    private List<StroringData> stroringData; // This will hold filtered data
-    private List<StroringData> complaintListFull; // This will hold full list for filtering
+    private List<StroringData> stroringData;
+    private List<StroringData> complaintListFull;
 
     public Complaint_Adapter(List<StroringData> stroringData) {
         this.stroringData = stroringData;
-        this.complaintListFull = new ArrayList<>(stroringData); // Initialize with full data
+        this.complaintListFull = new ArrayList<>(stroringData);
     }
 
     public void setData(List<StroringData> newData) {
