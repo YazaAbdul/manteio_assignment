@@ -19,16 +19,16 @@ import java.util.List;
 public class Complaint_Adapter extends RecyclerView.Adapter<Complaint_Adapter.Viewholder>{
 
     private List<StroringData> stroringData;
-    private List<StroringData> complaintListFull;
+
 
     public Complaint_Adapter(List<StroringData> stroringData) {
         this.stroringData = stroringData;
-        this.complaintListFull = new ArrayList<>(stroringData);
+
     }
 
     public void setData(List<StroringData> newData) {
         this.stroringData = newData;
-        this.complaintListFull = newData;
+
         notifyDataSetChanged();
     }
 
